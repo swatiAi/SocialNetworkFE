@@ -1,0 +1,50 @@
+<div class="mx-auto ">
+  <div class="login-container container-fluid h-">
+    <div class="container">
+      <div class="d-flex justify-content-center logo-container h-50">
+        <img src="assets/logo.png" alt="Logo" style="max-width: auto; height: auto; margin: 0 auto;">
+      </div>
+    </div>
+    <div class="d-flex justify-content-center text-align-center py-1 mx-auto my-auto">
+      <h1 class="text-center">Welcome to MY University Social Network</h1>
+    </div>
+  </div>
+  <div class="container-fluid py-4">
+    <div class="d-flex justify-content-center py-4">
+      <div class="col-md-4 col-sm-12 col-xs-12 py-4">
+        <form>
+          <div class="form-group">
+            <label for="username" class="form-label" style="color:#ED3237">Username</label>
+            <input type="text" style="background-color: ghostwhite; color:black" id="username" [(ngModel)]="username"
+              name="username" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="password" style="color:#ED3237">Password</label>
+            <input type="password" style="background-color: ghostwhite; color:black" id="password"
+              [(ngModel)]="password" name="password" class="form-control">
+          </div>
+          <div class="form-group d-flex justify-content-center">
+            <button (click)="login()" class="login-button">Login</button>
+            <button (click)="signup()">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <p class="text-center" style="font-size: large;">Made By Usman Javed Swati (AAI 212 003) & Ahsan Shah (ADC 212 013) </p>
+  </div>
+</div>
+<div class="modal" id="signupModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Sign Up</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

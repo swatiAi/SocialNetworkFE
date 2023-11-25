@@ -1,0 +1,15 @@
+<mat-toolbar style="background-color: #ED3237;">
+  <img src="assets/favi.png" style="color: white; width: 2rem; height: 2rem; margin-right: 1rem;">
+  <span style="font-weight: bold; color: ghostwhite;">MY University Social Network</span>
+  <div style="display: inline-block; margin-left: auto;">
+        <a (click)="showGraph()" mat-raised-button style="color: #ED3237; border-color: white;" target="_blank">
+          <mat-icon>group_work</mat-icon>
+      View Graph
+      </a>
+      &nbsp;&nbsp;
+      <a (click)="logout()" mat-raised-button style="color: #ED3237; border-color: white;">
+        <mat-icon>input</mat-icon>
+        Logout
+        </a>
+  </div>
+</mat-toolbar>

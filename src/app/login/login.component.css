@@ -1,0 +1,108 @@
+body{
+ background-color:  #EEDA98
+}
+.login-container {
+  background-color: #ED3237; /* Facebook blue */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  height: auto;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo-container img {
+  width: auto; /* adjust as needed */
+}
+
+.logo-container h1 {
+  color: white;
+  margin-top: 15px;
+  font-size: 2em;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: white;
+}
+
+.form-group button {
+  background-color: ghostwhite;
+  color: #ED3237;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-group button:hover {
+  background-color: #ED3237;
+  color :ghostwhite
+}
+
+.form-group button.signup-button {
+  margin-left: 10px;
+}
+p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+h1 {
+  text-align: center;
+  padding-top: -10px;
+  margin: 50;
+  line-height: 1;
+  display: flex;
+}
+.login-container .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container .logo-container img {
+  margin: 0 auto;
+}
+
+.login-container .text-center {
+  width: 25%;
+  height: 10%;
+  display: flex;
+  /* padding-top: 20px; */
+  /* justify-content: center;
+  align-items: center; */
+  color: white;
+  font-size: 30px;
+}
+.form-container{
+  padding-top: 150px;
+}
+

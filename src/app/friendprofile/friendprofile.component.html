@@ -1,0 +1,58 @@
+<app-header></app-header>
+
+<div class="container mx-auto p-4">
+  <div class="card">
+    <div class="card-header d-flex align-items-center">
+      <img src="assets/logo.png" alt="Logo" class="w-8 h-8 rounded-circle mr-4">
+      <h2 class="card-title m-0">Friends Profile</h2>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="{{user.imgUrl}}" alt="{{user.name}}'s Profile Image" class="img-fluid rounded-circle mx-auto">
+          <h4 class="text-center mt-2">{{user.name}}'s Profile</h4>
+          <button class="btn btn-primary mt-2" (click)="addFriend()">Add Friend</button>
+        </div>
+        <div class="col-md-7">
+          <h3 class="text-muted d-flex align-items-center">
+            <i class="material-icons mr-2">info</i>
+            Personal Information
+          </h3>
+          <div class="info-list">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center">
+                <i class="material-icons mr-2">account_circle</i>
+                <span>Name: {{user.name}}</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="material-icons mr-2">person</i>
+                <span>Username: {{user.username}}</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="material-icons mr-2">email</i>
+                <span>Email: {{user.email}}</span>
+              </li>
+            </ul>
+          </div>
+          <h3 class="text-muted d-flex align-items-center">
+            <i class="material-icons mr-2">group</i>
+            Friends
+          </h3>
+          <div class="friend-list">
+            <div class="d-flex flex-wrap">
+              <div class="friend-card rounded-lg overflow-hidden shadow-md mr-4 mb-4"
+                *ngFor="let friend of user.friends">
+                <img (click)="showFriend(friend)" [src]="friend.imgUrl" class="w-full rounded-lg"
+                  alt="{{friend.name}}'s Profile Image">
+                <div class="friend-card-info p-2">
+                  <h3 class="text-lg font-medium text-gray-800">{{friend.name}}</h3>
+                  <span class="text-xs text-gray-600">@{{friend.username}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
